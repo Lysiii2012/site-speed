@@ -47,6 +47,7 @@ if (document.querySelector('.reviewsSwiper')) {
         breakpoints: {
             870: {
                 spaceBetween: -200,
+                slidesPerView: 4,
                 coverflowEffect: {
                   rotate: 0,
                   stretch: 0,
