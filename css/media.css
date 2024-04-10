@@ -1034,6 +1034,8 @@
     .specialized-container h2::before{
         bottom: auto;
         top: -15px;
+        width: 80px;
+    height: 80px;
     }
     .page .logo-header{
         left: calc(50% - 60px);
@@ -1076,6 +1078,14 @@
         border-image: linear-gradient(183deg, #FFA500 0%, rgba(153, 99, 0, 0) 100%);
         border-image-slice: 1;
         border-radius: 8px 0 0 8px;
+    }
+    .truck-size-box-info>p{
+        border-image: linear-gradient(180deg, #FFA500 0%, rgba(153, 99, 0, 0) 100%);
+        border-image-slice: 2;
+        border-left: 2px solid;
+    }
+    .truck-size-boxs>div:last-child>div>div:last-child{
+        border-left: 2px solid;
     }
 }
 @media screen and (max-width: 575px) {
