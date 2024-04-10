@@ -749,6 +749,9 @@
     h1{
         font-size: 22px;
     }
+    .header-nav{
+        display: block;
+    }
     .page .header-nav-bur{
         gap: 46px;
     }
@@ -914,9 +917,15 @@
     footer{
         padding: 40px 0 20px;
     }
+    .footer-contact{
+        gap: 20px;
+    }
     .footer-logo{
-        max-width: 240px;
+        max-width: 160px;
         padding: 0;
+    }
+    .footer-contact ul{
+        gap: 20px;
     }
     .footer-logo::after{
         content: none;
@@ -930,8 +939,8 @@
         height: 20px;
     }
     .footer-contact ul svg{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .footer-contact a span{
         line-height: 0;
