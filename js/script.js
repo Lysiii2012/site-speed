@@ -91,14 +91,14 @@ if (window.innerWidth < 1300) {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             navBar.classList.remove('show');
-
+            document.body.classList.remove('hidden'); //
             $('.burgx3').stop().transition({ rotate: "+=135", "margin-top": "3px" });
             $('.burgx2').transition({ opacity: "1" }, "fast");
             $('.burgx').stop().transition({ rotate: "-=135", "margin-top": "26px" });
             toggled--;
-            if (window.innerWidth < 830) {
-                document.body.classList.remove('hidden');
-            }
+            // if (window.innerWidth < 830) {
+            //     document.body.classList.remove('hidden');
+            // }
         });
     });
 }
@@ -207,3 +207,12 @@ document.addEventListener('DOMContentLoaded', function() {
         homeLink.classList.add('active-link');
     }
 });
+if (window.innerWidth < 768){
+  const selectDiv = document.querySelectorAll('.our-services-select>div');
+
+selectDiv.forEach(item => {
+  item.addEventListener('click', function() {
+    this.classList.toggle('hover');
+})
+});
+}
