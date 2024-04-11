@@ -180,6 +180,10 @@ h1{
     gap: 29px;
     align-items: center;
 }
+a.active-url{
+  color: var(--red);
+    text-shadow: 1px 0px 1px var(--red);
+}
 a.active-link{
     color: var(--red);
     text-shadow: 1px 0px 1px var(--red);
@@ -973,6 +977,7 @@ padding-right: 30px;
     background-position: center bottom;
 
   }
+  
   .form-container>div>div , .form-pop-up>div{
     padding: 30px 51px 32px;
     margin: 0 auto;
