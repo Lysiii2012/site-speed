@@ -965,7 +965,7 @@ padding-right: 30px;
   .form-container{
     padding: 160px 0 180px;
     background: url(../img/form-bg.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center bottom;
 
   }
