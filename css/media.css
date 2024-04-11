@@ -761,9 +761,9 @@
     .video-container img{
         width: 100%;
     }
-    span[id]{
+    div>span[id]{
         position: relative;
-        top:-60px
+        top:-40px
       }
 }
 @media screen and (max-width: 830px) {
@@ -1032,6 +1032,10 @@
     }
     .form-container>div>div, .form-pop-up>div{
         max-width: 400px;
+        width: 80%;
+    }
+    .form-container h2{
+        font-size: 22px;
     }
     .select2-container{
         width: 100% !important;
