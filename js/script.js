@@ -16,6 +16,7 @@ $(document).ready(function() {
 if (document.querySelector('.reviewsSwiper')) {
     var swiper = new Swiper(".reviewsSwiper", {
         effect: "coverflow",
+        allowTouchMove: false,
         grabCursor: true,
         centeredSlides: true,
         loop: true,
@@ -199,15 +200,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetSection) {
                 const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                    top: targetPosition - 100, 
+                    top: targetPosition - 0, 
                     behavior: 'smooth'
                 });
-                if (window.innerWidth < 767){
-                    window.scrollTo({
-                        top: targetPosition - 60, 
-                        behavior: 'smooth'
-                    });  
-                }
+                // if (window.innerWidth < 767){
+                //     window.scrollTo({
+                //         top: targetPosition - 60, 
+                //         behavior: 'smooth'
+                //     });  
+                //}
             }
         });
     });

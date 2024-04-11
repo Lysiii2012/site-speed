@@ -761,6 +761,10 @@
     .video-container img{
         width: 100%;
     }
+    span[id]{
+        position: relative;
+        top:-60px
+      }
 }
 @media screen and (max-width: 830px) {
     .services-include ul{

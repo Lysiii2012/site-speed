@@ -169,7 +169,9 @@ h1{
     line-height: 119%;
     text-transform: capitalize;
     transition: all .3s linear;
+    cursor: pointer;
 }
+
 .nav-links a:hover{
   color: var(--red);
 }
@@ -180,11 +182,18 @@ h1{
 }
 a.active-link{
     color: var(--red);
-font-weight: 700;
+    text-shadow: 1px 0px 1px var(--red);
 }
 .header-nav{
     display: flex;
     gap: 100px;
+}
+div>span[id]{
+  position: relative;
+  top:-100px
+}
+.select2-selection__arrow{
+  cursor: pointer;
 }
 .artclose{
   display: none;
@@ -425,6 +434,8 @@ p{
     justify-content: center;
     gap: 54px;
     margin: 79px 0 215px;
+    position: relative;
+    z-index: -1;
 }
 .our-services-select h5{
     color: var(--white);
@@ -566,6 +577,7 @@ p{
     z-index: 200;
     overflow: hidden;
     transition: all 1s linear;
+    overflow-y: scroll;
 }
 .our-services>ul li{
   position: relative;
@@ -577,8 +589,6 @@ p{
 }
 .our-services-select>div:hover ul{
     max-height: 500px;
-    overflow-y: scroll;
-
 }
 .our-services-select>div{
     position: relative;
@@ -1269,11 +1279,13 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 51.5
     height: 67px;
     justify-content: center;
     border-radius: 6px;
+    border: none;
     background: var(--red);
     transition: all .5s linear;
   }
   .page .btn-form:hover{
     background: #930307;
+    box-shadow: 0 2px 5px #930307;
   }
   .page h1{
     display: none;
