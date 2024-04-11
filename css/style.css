@@ -429,6 +429,10 @@ p{
     box-shadow: 10px 11px 10.7px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient(112.75deg, rgba(255, 255, 255, 0.2) 7.426%,rgba(65, 65, 65, 0.2) 76.92%);
 }
+.our-services-footer a:hover{
+  transform: translateY(-2px);
+}
+
 .our-services-footer ul {
     display: flex;
     justify-content: center;
