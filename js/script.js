@@ -20,7 +20,7 @@ if (document.querySelector('.reviewsSwiper')) {
         grabCursor: true,
         centeredSlides: true,
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: -140,
         coverflowEffect: {
             rotate: 0,
@@ -46,6 +46,9 @@ if (document.querySelector('.reviewsSwiper')) {
             clickable: true
         },
         breakpoints: {
+            575:{
+                slidesPerView: 2,
+            },
             870: {
                 spaceBetween: -200,
                 slidesPerView: 4,
