@@ -434,6 +434,16 @@
     .header-nav, .header-nav-bur{
         gap: 75px;
     }
+   
+    .footer-contact>div{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-contact>div .footer-mail{
+        margin: 0;
+    }
     .truck-size-items>div h3{
         font-size: 36.04px;
         padding: 17px 17px 17px 28px;
@@ -1305,6 +1315,10 @@
     .our-services>ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .footer-contact>div{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
     .our-services>ul li{
         width: 100%;

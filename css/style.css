@@ -338,6 +338,10 @@ p{
     background-size: 60%;
   }
 }
+.footer-contact .footer-mail{
+  margin: 0 0 20px;
+  display: inline-block;
+}
 .social-links ul{
     display: flex;
     flex-direction: column;
@@ -1233,7 +1237,11 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 51.5
     margin: 22px 0 15px;
     padding: 7px 0;
   }
-  .footer-contact>a{
+  .footer-contact>div svg{
+    position: relative;
+    top: 3px;
+  }
+  .footer-contact>div>a{
     color: var(--white);
     font-family: "Roboto";
     font-size: 16px;
