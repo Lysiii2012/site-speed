@@ -226,13 +226,22 @@ document.addEventListener('DOMContentLoaded', function() {
         homeLink.classList.add('active-link');
     }
 });
-if (window.innerWidth < 768){
-  const selectDiv = document.querySelectorAll('.our-services-select>div');
+// if (window.innerWidth < 768){
+//   const selectDiv = document.querySelectorAll('.our-services-select>div');
 
-selectDiv.forEach(item => {
-  item.addEventListener('click', function() {
-    this.classList.toggle('hover');
-})
-});
-}
+// selectDiv.forEach(item => {
+//   item.addEventListener('click', function() {
+//     this.classList.toggle('hover');
+// })
+// });
+// document.addEventListener('click', function(event) {
+//     if (!event.target.closest('.our-services-select>div ul' || !event.target.closest('.our-services-select h5'))) {
+//         const headerLists = document.querySelectorAll('.our-services-select>div>div');
+//         headerLists.forEach(headerList => {
+//             headerList.classList.remove('hover');
+//         });
+//     }
+// });
+
+// }
 
