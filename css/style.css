@@ -322,8 +322,11 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 2px 7px #ffffff9d;
-  /* animation: move-btn 2s linear infinite; */
+  animation: move-btn 2s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
   transition: all .5s linear;
+  opacity: 0;
 }
 .social-link-phone:hover{
   background: #ffffffeb;
@@ -334,15 +337,19 @@ p{
 @keyframes move-btn {
   0% {
     box-shadow: 0 2px 7px #ffffff9d;
-    background-size: 60%;
+    /* background-size: 60%; */
+    opacity: 0;
+    overflow: hidden;
   }
   50% {
-    background-size: 70%;
+    /* background-size: 70%; */
     box-shadow: 0 2px 10px #ffffffc8;
   }
   100% {
     box-shadow: 0 2px 7px #ffffff9d;
-    background-size: 60%;
+    /* background-size: 60%; */
+    opacity: 1;
+    overflow: hidden;
   }
 }
 .footer-contact .footer-mail{
