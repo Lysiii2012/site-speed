@@ -440,6 +440,7 @@
    
     .footer-contact>div{
         display: flex;
+        flex-direction: row;
         gap: 50px;
         flex-wrap: wrap;
         align-items: center;
